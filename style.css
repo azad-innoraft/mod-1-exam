@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-green: #043F2E;
+    --lightest-green: #C8F169;
+    --dark-green: #2A6B2C;
+    --green: #78C51C;
+    --white: #FFFFFF;
+    --cream: #EEF2E3;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.container-fluid {
+    width: 100%;
+    padding-inline: 12px;
+}
+
+
+.container {
+    width: 100%;
+    padding-inline: 12px;
+    margin: 0 auto;
+}
+
+.promotion-content {
+    background-color: var(--lightest-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-content a {
+    color: var(--bg-green);
+    font-weight: 500;
+}
+
+.promotion-content p {
+    padding-block: 20px;
+    font-weight: 500;
+    color: var(--dark-green);
+    flex: 1;
+    text-align: center;
+}
+
+.promotion-content i {
+    color: var(--dark-green);
+}
+
+.navbar {
+    background-color: var(--bg-green);
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--white);
+    gap: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.navbar-wrapper nav {
+    flex: 1;
+}
+
+.navbar-wrapper nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 100%;
+}
+
+.navbar-wrapper a,
+.hero-media-wrapper a {
+    text-decoration: none;
+    color: var(--bg-green);
+    font-weight: 500;
+}
+
+.cta-btn {
+    padding-inline: 36px;
+    padding-block: 16px;
+    border: 1px solid var(--bg-green);
+    border-radius: 4px;
+}
+
+.cta-dark-green {
+    background-color: var(--bg-green);
+}
+
+.cta-white {
+    background-color: var(--white);
+}
+
+a.cta-dark-green {
+    color: var(--lightest-green);
+}
+
+.nav-cta-btns>a:first-child {
+    margin-right: 16px;
+}
+
+.nav-cta-btns>a {
+    vertical-align: middle;
+}
+
+.hero-section {
+    background-color: var(--bg-green);
+    padding-block: 56px;
+    min-height: 100vh;
+}
+
+.hero-title {
+    max-width: 80%;
+    font-family: "Noticia Text";
+    font-weight: 900;
+    font-size: 5.5rem;
+    background-color: var(--lightest-green);
+    padding-inline: 32px;
+    color: var(--bg-green);
+    border-radius: 20px;
+    /* clip-path: path("M 0,20 A 20 20 0 0 1 20,0 L 940,0 A 20 20 0 0 1 960,20 L 960,190 A 20 20 0 0 0 980,210 L 1160,210 A 20 20 0 0 1 1180,230 L 1180,400 A 20 20 0 0 1 1160,420 L 760,420 A 20 20 0 0 1 740,400 L 740,300 A 20 20 0 0 0 720,280 L 320,280 A 20 20 0 0 1 300,260 L 300,160 A 20 20 0 0 0 280,140 L 20,140 A 20 20 0 0 1 0,120 Z"
+        ); */
+}
+
+.hero-analysis {
+    float: right;
+    background-color: var(--bg-green);
+    border-radius: 20px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+
+}
+
+.hero-analysis-content {
+    background-color: var(--dark-green);
+    padding: 24px;
+    border-radius: 12px;
+    color: var(--lightest-green);
+}
+
+.hero-analysis-content p:first-child {
+    font-size: 3rem;
+}
+
+.hero-analysis-content> :not(:last-child) {
+    margin-bottom: 12px;
+}
+
+
+.hero-media-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hero-media-wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 48px;
+    color: var(--white);
+}
+
+.hero-media-wrapper>img {
+    clip-path: polygon(0 0, 51% 0, 51% 37%, 100% 37%, 100% 100%, 0 100%);
+    padding-top: 32px;
+    padding-right: 32px;
+}
+
+.hero-cta-btns .cta-btn {
+    border: 1px solid var(--cream);
+}
+
+.hero-cta-btns>a:last-child {
+    color: var(--white);
+}
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
